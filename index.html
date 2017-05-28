@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <link rel="shortcut icon" href="crap/yellow.ico"/>
+		<title>ROOM | Jewelery </title>
+        
+        <script src=//code.jquery.com/jquery-3.2.1.min.js></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script src="typed.js" type="text/javascript"></script>
+      <!--type -->
+      <script>
+    document.addEventListener('DOMContentLoaded', function(){
+
+        Typed.new("#typed", {
+            stringsElement: document.getElementById('typed-strings'),
+            typeSpeed: 600,
+            backDelay: 5000,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to null for infinite loop
+            loopCount: null,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+            });
+
+            var resetElement = document.querySelector('.reset');
+            if(resetElement) {
+            resetElement.addEventListener('click', function() {
+                document.getElementById('typed')._typed.reset();
+                });
+            }
+
+          });
+
+          function newTyped(){ /* A new typed object */ }
+
+          function foo(){ console.log("Callback"); }
+        
+
+      </script>
+      <!--type -->
+
+      
+    <link rel='stylesheet' type='text/css'  href='style.css'/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    	</head>
+	<body>
+      
+    
+        <div class='fixed'>
+        
+      
+        <div class='map'>
+          <div id='title'><span>Jewelery</span></div>
+            <div id='room_map'>
+            <img id='room' src='crap/room.png'>
+            <div id='location'></div>
+          </div>
+          
+          <!--moving-->
+        <div class="movingtop">
+        <div class='next'>
+          <div id="next_arrow"></div>
+
+        </div>
+        <div class='back'>
+          <a href="https://imhidinginroom.github.io/room.github.io/">
+          <div id='back_arrow'></div></a>
+        </div>
+        </div>  
+          <!--type-->
+        <div>
+        <span id='start_type'></span>
+        <div class="type-wrap">
+            <div id="typed-strings">
+                <span>14</span>
+                <span>stick till the end</span>
+                <span>14</span>
+                
+            </div>
+            <span id="typed" style="white-space:pre;"></span>
+        </div>
+        </div> 
+          <div>
+          <p id="contact">talk to me</p>  
+          <span id="mail">im.hiding.in.room@gmail.com</span>  
+          <p id="info">twenty. student. live with parents<br>hochiminh city vietnam<br>name is tran thanh thao</p>
+          </div>  
+           
+        </div>
+        </div>  
+        <!-- contain -->
+        <div class="container">
+
+        <p id="content">Honey<br>You gotta work hard (Honey)<br>you're my jewels<br>That's very fine (Honey)<br>Look around you<br>For all the best I can do (Honey)<br>Nothing will hurt you<br><br>Honey<br>Make me proud (Honey)<br>you're my jewels<br>Keep getting better (Honey)<br>Look around you<br>For all the best we can do (Honey)<br>Get the jewels<br><br>"I can see the cost<br>But what's the use?"<br>It's our value (Honey)<br>"It's our value"<br><br>You're my sweet shining jewels<br>You're my sweet shining jewels<br>I would give anything, my everything<br>just for you<br>I would give anything, my everything<br>to keep you<br><br>Honey<br>I work hard (Honey)<br>to polish you<br>Keep getting better (Honey)<br>Time will prove<br>For all the best we can do (Honey)<br>Make sure you'll get the jewels</p>
+        
+        <div class='footer'>
+          <p>ROOM | ONE FUCKED UP KID</p>
+        </div>
+        
+        <div class="mapbottom">
+        <div class="movingbottom"></div>
+          
+          <div class='nextbottom'>
+          <div id="next_arrow"><a href=#></a></div>
+          </div>
+      
+          <div class='backbottom'>
+          <a href="https://imhidinginroom.github.io/room.github.io/">
+          <div id='back_arrow'></div></a>
+        </div>
+        </div>  
+        </div>    
+      
+      
+        <script>
+        setInterval(function(){blink()}, 10);
+        function blink() {
+        $("#location").fadeTo('slow', 0.5).fadeTo('slow', 1.0);
+        };
+        function loadswitharrow(){
+        }
+
+          $(document).ready(function(){
+              $(".map").animate({
+                 opacity: 1,
+                 left: "+=10",
+              }, 900, function() {
+              });
+            
+              $(".container").animate({
+                 opacity: 1,
+                 
+              }, 1200, function() {
+              });
+            
+              $("#next_tag").hide();
+              $(".map").addClass("fixed");            
+
+              $('#contact').click(function(){
+                  $('#mail, #info').fadeToggle();
+              })
+          });
+        </script>          
+	</body>
+</html>
